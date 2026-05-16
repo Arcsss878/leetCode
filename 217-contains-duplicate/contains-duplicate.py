@@ -1,9 +1,9 @@
 class Solution(object):
     def containsDuplicate(self, nums):
         seen = {}
-        for i, val in enumerate(nums):
+        for val in nums:
             if val in seen:
                 return True
-            seen[val] = i
+            seen[val] = True
         return False
         
