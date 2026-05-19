@@ -20,14 +20,10 @@ class Solution(object):
                 if abs(cur - target) < abs(close - target):
                     close = cur
 
-                #kayak 2 pointer pada umumnya (while buat skipping duplicates for speed di three sum sebelum ada)
+                #kayak 2 pointer pada umumnya
                 if cur < target:
-                    left += 1
-                    while left < right and nums[left] == nums[left-1]:
-                        left += 1      
+                    left += 1   
                 else:
                     right -= 1
-                    while left < right and nums[right] == nums[right+1]:
-                        right -= 1
         return close
 
