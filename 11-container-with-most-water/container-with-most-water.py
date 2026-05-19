@@ -30,7 +30,7 @@ class Solution(object):
                 # Skip all left heights that are <= current left height
                 current_left = height[left]
                 while left < right and height[left] <= current_left:
-                    eft += 1
+                    left += 1
             else:
                 # Skip all right heights that are <= current right height
                 current_right = height[right]
