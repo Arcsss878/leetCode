@@ -25,6 +25,8 @@ class Solution(object):
                     close = max_sum
                 continue  # try next i, because larger i might get closer from below
 
+            #gapake yang diatas ini udah jalan tapi kalo pake jadi kenceng run time e
+
             #init left right kayak 3 sum
             left = i + 1
             right = len(nums) - 1
