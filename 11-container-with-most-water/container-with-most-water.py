@@ -21,7 +21,8 @@ class Solution(object):
         return largest
         
 
-        #better solution(di ringkas aja sih, sama tambah while dalem if buat skip tinggi yang < atau = dengan yang udah di komputasiin)
+        #better solution (di ringkas aja sih)
+        #sama tambah while dalem if buat skip tinggi yang < atau = dengan yang udah di komputasiin
         while left < right:
             luas = min(height[left], height[right]) * (right - left)
             largest = max(largest, luas)
