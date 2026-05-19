@@ -11,11 +11,7 @@ class Solution(object):
             while left < right:
                 curr_sum = nums[left] + nums[right]
                 if curr_sum == target:
-                    temp = []
-                    temp.append(nums[i])
-                    temp.append(nums[left])
-                    temp.append(nums[right])
-                    hasil.append(temp)
+                    hasil.append([nums[i], nums[left], nums[right]])
                     left += 1
                     right -= 1
                     while left < right and nums[left] == nums[left-1]:
