@@ -3,10 +3,15 @@ class Solution(object):
         left = 0
         right = len(nums) - 1
         while left <= right:
+            #cari mid dulu buat nyari posisi target dimana
             mid = (left + right) // 2
+            #kalo mid sama langsug kembaliin
             if nums[mid] == target:
                 return mid
             
+            #jadi ni intine ngecek kalo di kanan apa kiri yang lebih besar dari mid
+            #kalo di kanan coba liat apakah target diantara mid sama left, kalo ga ya brt target dikanan dan sebaliknya
+            #ini nanti kalo udah ketemu posisi rght/left digeser jadi mid -/+1 jadi memperkecil array pencariannya
             # Check which half is sorted
             if nums[left] <= nums[mid]:   # left half is sorted
                 if nums[left] <= target < nums[mid]:
