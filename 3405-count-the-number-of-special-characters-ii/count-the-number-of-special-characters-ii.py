@@ -8,7 +8,9 @@ class Solution(object):
         first_upper = [float('inf')] * 26
         
         for i, ch in enumerate(word):
+            #kalo valuenya lower case
             if ch.islower():
+                #idx ini buat menentukan di index mana ch ini
                 idx = ord(ch) - ord('a')
                 # Simpan indeks terakhir (terus diupdate)
                 last_lower[idx] = i
