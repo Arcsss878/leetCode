@@ -13,4 +13,10 @@ class Solution(object):
         #kembalikin hasilnya
         return res
         
+        #alternatif 
+        res = 0
+        for i in range(len(nums)):
+            res ^= i ^ nums[i]   # XOR index i (0..n-1) and value
+        res ^= len(nums)         # XOR the missing last index n
+        return res
         
