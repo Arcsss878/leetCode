@@ -15,5 +15,8 @@ class Solution(object):
                 r.append(False)
         return r
 
+        #versi singkat
+        most = max(candies)
+        return [candy + extraCandies >= most for candy in candies]
 
         
