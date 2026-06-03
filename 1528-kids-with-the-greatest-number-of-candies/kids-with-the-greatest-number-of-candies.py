@@ -1,11 +1,9 @@
 class Solution(object):
     def kidsWithCandies(self, candies, extraCandies):
         #buat most buat nampung brapa permen terbanya, r buat result
-        most = 0
+        most = max(candies)
         r = []
         #cari brapa candy terbanyaknya
-        for i in candies:
-            most = max(most, i)
         #bandingin candy terbanyak smaa candy dipunya + extra kalo >= true kalo ga false
         for i in candies:
             candy = i + extraCandies
