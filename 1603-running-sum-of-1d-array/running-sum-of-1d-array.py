@@ -9,3 +9,5 @@ class Solution(object):
             r.append(curr_sum)
         return r
         
+        #clean (just use built in)
+        return list(accumulate(nums))
