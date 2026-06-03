@@ -4,6 +4,8 @@ class Solution(object):
         most = max(candies)
         r = []
         #cari brapa candy terbanyaknya
+        #for i in candies:
+        #    most = max(most, i)
         #bandingin candy terbanyak smaa candy dipunya + extra kalo >= true kalo ga false
         for i in candies:
             candy = i + extraCandies
